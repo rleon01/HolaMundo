@@ -16,6 +16,7 @@
 		B54153D41C77A865008F73F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54153D21C77A865008F73F3 /* LaunchScreen.storyboard */; };
 		B54153DF1C77A865008F73F3 /* HolaMundoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B54153DE1C77A865008F73F3 /* HolaMundoTests.m */; };
 		B54153EA1C77A865008F73F3 /* HolaMundoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B54153E91C77A865008F73F3 /* HolaMundoUITests.m */; };
+		B54153FA1C77AAD3008F73F3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54153F91C77AAD3008F73F3 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		B54153E51C77A865008F73F3 /* HolaMundoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HolaMundoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54153E91C77A865008F73F3 /* HolaMundoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HolaMundoUITests.m; sourceTree = "<group>"; };
 		B54153EB1C77A865008F73F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B54153F91C77AAD3008F73F3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B54153FA1C77AAD3008F73F3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +87,7 @@
 		B54153B51C77A864008F73F3 = {
 			isa = PBXGroup;
 			children = (
+				B54153F91C77AAD3008F73F3 /* MapKit.framework */,
 				B54153C01C77A865008F73F3 /* HolaMundo */,
 				B54153DD1C77A865008F73F3 /* HolaMundoTests */,
 				B54153E81C77A865008F73F3 /* HolaMundoUITests */,
@@ -212,6 +216,11 @@
 				TargetAttributes = {
 					B54153BD1C77A864008F73F3 = {
 						CreatedOnToolsVersion = 7.2.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					B54153D91C77A865008F73F3 = {
 						CreatedOnToolsVersion = 7.2.1;
